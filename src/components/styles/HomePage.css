@@ -1,0 +1,235 @@
+/* General Styling */ 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../../images/background.png');
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: #EDF6F9;
+    border-radius: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 440px;
+    transform: translateX(325%) !important;
+}
+
+.Nav-Logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #4A7A74;
+   
+}
+
+.Nav-Menu {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-item {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2%;
+    text-decoration-skip-ink: auto;
+    margin: 0;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 12px;
+    transition: background 0.3s ease;   
+}
+
+.nav-item.active {
+    background: #C8DEDC;
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 180px;
+    height: 180px;
+    background:rgba(239, 255, 253, 1);  
+    border-radius: 50%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000 !important; 
+    right: 550px !important;
+    top : -10px !important;
+}
+.profile-icon img{
+    width: 30%;
+}
+/* Welcome Message */
+.msg-welcome {
+    width: 650px ;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top : -160px ;
+    background-color:  rgba(81, 131, 129, 1);
+    border-radius: 22px;
+    box-shadow: -6px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.msg-welcome p {
+    font-family: Rammetto One;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: 0%; 
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(255 , 255 , 255 ,1);
+    padding: 10px 20px;
+    border-radius: 20px;   
+}
+
+/* Start Section */
+.start-container {
+    width: 700px;
+    height: 100px;
+    background: white;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 9.9px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top :  -170px;
+    right: 250px;
+    border: 5px solid rgba(81, 131, 129, 1)!important;
+}
+.start {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.start h2 {
+    font-family: Rammetto One;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color:  rgba(81, 131, 129, 1);
+    
+}
+
+.start p {
+    font-family: Montserrat;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+    color: rgba(0,0,0,1);
+    position: relative;
+  margin-top: -20px;
+}
+
+.logo-icon {
+    width: 80px;
+    height: 80px;
+   
+    border-radius: 12px;
+    margin: 20px auto;
+    border: 3px solid rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 44%;
+    top: -100%;
+}
+
+/* Menu Container */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto; /* centers it */
+    padding: 100px;
+    max-width: 1000px; /* adjust as needed */
+
+}
+
+
+.part {
+    width: 200px;
+    height: 200px;
+    background:  rgba(154, 199, 196, 1);
+    color: white;
+    padding: 40px;
+    border-radius: 34px;
+    text-align: center;
+    font-size: 18px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    cursor: pointer;
+    width: 270px;
+}
+
+.part img{
+    border-radius: 30px;
+    position: relative;
+    top: -25px;
+}
+
+.part p {
+    position: relative;
+    top : -40px;
+    font-family: Rammetto One;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(28, 81, 79, 1);
+}
+
+.part:hover {
+    transform: translateY(-10px);
+}
+
+.rectMenuH {
+    display: flex;
+    top: -150px;
+    height: 350px;
+    background-color: rgba(81, 131, 129, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 64px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}

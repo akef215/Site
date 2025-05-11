@@ -1,0 +1,121 @@
+/* QuizzesSurveysPage.css */
+.app-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.QuizSection {
+  margin-bottom: 30px;
+}
+
+.Quiz {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 600;
+  background-color: #657599;
+  border-radius: 17px;
+  padding: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.QuizTitle {
+  background-color: #2B3C56;
+  border-radius: 26px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-right: 200px;
+}
+
+.Launch {
+  background-color: #2B3C56;
+  border-radius: 26px;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-right: 0px;
+}
+
+.button-row {
+  padding: 0 !important;
+  margin: 0 !important; 
+}
+
+.SurveySection {
+  margin-bottom: 30px;
+}
+
+.Survey {
+  display: flex;
+  flex-direction: row;
+  background-color: #88B7AF;
+  padding: 20px;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 17px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.SurveyTitle {
+  background-color: #518381;
+  border-radius: 26px;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-right: 200px;
+}
+
+.LaunchS {
+  background-color: #518381;
+  border-radius: 26px;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-right: 0px;
+}
+
+.button-row {
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}

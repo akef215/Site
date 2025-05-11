@@ -1,0 +1,246 @@
+/* Importation des fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Styles globaux */
+.login-page {
+  display: flex;
+  height: 100vh;
+  background-color: #e2f8fb;
+  overflow-x: auto; /* Disable horizontal scroll */
+  overflow-y: auto; 
+}
+
+.image-section {
+  flex: 1;
+  background-image: url('../pic/logpic.png');
+  background-size:cover;
+  background-position: center;
+  width: 300px!important;
+  height: 1000px!important;
+}
+
+.login-image {
+  display: none;
+}
+
+/* Section droite - Contenu */
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+  width: 695px;
+  margin-top: 150px;
+}
+
+/* Carré bleu (Formulaire) */
+.login-box {
+  background-color: rgba(223, 240, 255, 1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement tous les enfants */
+  
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  height: 400px;
+  /* max-width: 500px; */
+  margin-bottom: 0px;
+  position: relative;
+  top:-0.5px !important ;
+  
+  
+}
+
+.log-acc {
+  font-family: 'Rammetto One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 67.56px;
+  color: rgba(33, 51, 78, 1);
+  position: relative;
+  top : -20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  position: relative;
+  top : -30px ;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26.82px;
+  color: rgba(0, 0, 0, 1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #285e61;
+  opacity: 0.5;
+}
+
+/* Pour le bouton de Login */
+#login {
+  width: 411px;
+  height: 66px;
+  border-radius: 50px;
+  background-color: rgba(78, 134, 129, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31.69px;
+
+  margin: 0 auto; /* Centré horizontalement + espace en bas */
+  display: block;
+}
+
+
+.connect-group {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.94px;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.connect-group a {
+  text-decoration: underline;
+}
+
+/* Section blanche (Options) */
+.auth-options {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Séparateur visuel */
+#or {
+  color: rgba(0, 0, 0, 0.76);
+  margin: 20px 0;
+  position: relative;
+}
+
+#or::before,
+#or::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+.white-box {
+   margin-top: -150px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 750px;
+  max-width: 600px;
+}
+
+/* Style pour le conteneur du champ de mot de passe */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px; /* laisse de l'espace pour l'image */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+}
+
+.toggle-password img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+/* Responsive Design using Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  body{
+    overflow: auto;
+  }
+  
+  .login-page {
+    flex-direction: column; /* Stack image and form vertically */
+  }
+
+  .image-section {
+    display: none; /* Hide the left image on small screens */
+  }
+
+  .white-box {
+    width: 100%;
+  }
+  .send-code-btn {
+    right: 10px; /* Tighter margin on small screens */
+    top: 40%; /* Adjust height if needed */
+    font-size: 14px; /* Smaller text */
+  }
+}
+
+/* For very small devices (phones) */
+@media (max-width: 480px) {
+  .login-box h2 {
+    font-size: 1.5rem; /* Reduce title size */
+  }
+
+  .white-box {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .password-container {
+    flex-direction: column; /* Stack password input and button */
+  }
+}
